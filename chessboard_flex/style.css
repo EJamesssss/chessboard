@@ -1,0 +1,26 @@
+body{
+    display: flex;
+    justify-content: center;
+    margin: 0%;
+} 
+
+.container {
+	display: flex;
+    flex-wrap: wrap;
+    width: 40vw;
+    height: 40vw;
+    box-shadow: 0 15px 15px #666633
+}
+
+.colored {
+    background: #999966;
+}
+
+.cell {
+	display: flex;
+    height: 5vw;
+    width: 5vw;
+    justify-content: center;
+    align-items: center;
+    font-size: 4vw;
+}
