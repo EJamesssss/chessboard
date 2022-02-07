@@ -16,7 +16,7 @@ body{
     background: #999966;
 }
 
-.cell {
+.box {
 	display: flex;
     height: 5vw;
     width: 5vw;
@@ -24,3 +24,71 @@ body{
     align-items: center;
     font-size: 4vw;
 }
+
+.container:hover .box:nth-child(13) {
+    animation: whitepawn1 2s ease-in forwards 1s;
+  }
+  
+  @keyframes whitepawn1 {
+    100% {
+      transform: translateY(200%);
+    }
+  }
+
+  .container:hover .box:nth-child(54) {
+    animation: blackpawn1 2s ease-in forwards 3s;
+  }
+  
+  @keyframes blackpawn1 {
+    100% {
+      transform: translateY(-200%);
+    }
+  }
+  
+  .container:hover .box:nth-child(4) {
+    animation: queen1 2s ease-in forwards 5s;
+  }
+  
+  @keyframes queen1 {
+    100% {
+      transform: translateY(200%) translateX(200%);
+    }
+  }
+
+
+  .container:hover .box:nth-child(63) {
+    animation: whitehorse1 2s ease-in forwards 7s;
+  }
+  
+  @keyframes whitehorse1 {
+    75%{
+        transform: translateY(-200%);
+    }
+    100% {
+      transform: translateY(-200%) translateX(-100%);
+    }
+  }
+  
+    .container:hover .box:nth-child(2) {
+    animation: blackhorse1 2s ease-in forwards 10s;
+  }
+  
+    @keyframes blackhorse1 {
+      75% {
+        transform: translateY(200%);
+      }
+      100%{
+          transform: translateY(200%) translateX(100%);
+      }
+      
+    }
+    .container:hover .box:nth-child(56) {
+        animation: whitepawn2 2s ease-in forwards 13s;
+      }
+      
+        @keyframes whitepawn2 {
+          100% {
+            transform:translateY(-200%);
+          }
+          
+        }
